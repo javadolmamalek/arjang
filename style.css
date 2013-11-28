@@ -1,0 +1,244 @@
+/*
+-----------------------------------------------------
+ARJANG - Open Source Project
+CSS Codes
+Design by Javad Haji Amini - http://jentelman.com
+http://jentelman.com/arjang
+November,2013
+-----------------------------------------------------
+*/
+
+/* open font */
+@font-face {
+	font-family: 'b yekan';
+	font-weight: normal;
+	font-style: normal;
+	src: url("BYekan.ttf") format("truetype"),
+		 url("BYekan.eot") format("embedded-opentype"),
+		 url("BYekan.woff") format("woff"),
+		 url("BYekan.svg") format("svg")
+}
+
+/* body and public style */
+html, body {
+	font-family: 'b yekan';
+	direction: rtl;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	background: #1B2346;
+	color: #fff;
+	height:100%;
+}
+.start{
+	min-height: 100%;
+	position: relative;
+}
+
+/* header bar styles*/
+.header {
+	max-width: 100%;
+	height: auto;
+	font-size: 20px;
+	padding: 5px 10px 5px 10px;
+	z-index: 2;
+}
+.header-or {
+	background: #0D368D;
+}
+.header-er {
+	background: #801313;
+}
+.header-su {
+	background: #375313;
+}
+
+/* text bar styles */
+.text {
+	max-width: 100%;
+	height: auto;
+	font-size: 13px;
+	padding: 10px;
+	z-index: 1;
+}
+.text-or {
+	background: #435499;
+}
+.text-er {
+	background: #992929;
+}
+.text-su {
+	background: #5B8639;
+}
+
+/* text but style */
+.selected-style, .selected-style  ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.selected-style li a{
+	display: block;
+	padding: 5px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.selected-style li a:hover{
+	background: #26266F;
+}
+.selected-style-l{
+	display: block;
+	padding: 5px;
+	color: #ffffff;
+	background: #26266F;
+}
+
+/* form style */
+.form {
+	margin: 10px 0 5px 0;
+	width: 100%;
+	height: auto;
+}
+#form-inputs {
+	float:right;
+	width: 49.5%;
+}
+#form-outputs {
+	float:left;
+	width: 49.5%;
+}
+
+/* input and but style */
+.input {
+	border: 1px solid #000;
+	background-color: #FBFBFB;
+	width: 100%;
+	padding: 7px 10px;
+	font-family: 'tahoma';
+	font-size: 12px;
+	color: #000;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: block;
+	margin: 0 0 10px 0;
+}
+.input-textarea {
+	min-height: 200px;
+	resize: vertical;
+}
+.input-text {
+	height: auto;
+}
+.input:focus {
+	background-color: #D5E4FF;
+	outline: none;
+}
+.but {
+	cursor: pointer;
+	font-family: 'b yekan';
+	font-size: 22px;
+	padding: 3px 10px;
+	color: #FFF;
+	background: #2764A7;
+	border: 0;
+	width: 100%;
+}
+.but:hover, .but:focus {
+	background: #478FDD;
+	outline: none;
+}
+.radio-style {
+	padding: 5px 0 0 0;
+	border: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+.input-radio {
+	display: none;
+}
+.input-radio + label {
+	background-color: #FBFBFB;
+	border: 1px solid #BBB;
+	padding: 9px;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-left: 5px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.input-radio:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	color: #99a1a7;
+}
+.input-radio:checked + label:after {
+	content: '\2718';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+/* logo style */
+.about-logo {
+	background: url(./logo.svg);
+	border: 0;
+	width: 125px;
+	height: 125px;
+	float: right;
+	margin: 0 0 5px 5px;
+}
+
+/* footer */
+.h-footer{
+	height: 88px;
+}
+.footer {
+	max-width: 100%;
+	height: 72px;
+	padding: 5px;
+	z-index: 2;
+	background: #253049;
+	border-top: 1px solid #3C405C;
+	font-family: 'Arial';
+	font-size: 11px;
+	direction: ltr;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+.footer-text {
+	float: left;
+	margin-left: 10px;
+}
+.footer-text  ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.footer-text li a{
+	display: block;
+	padding: 5px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-text li a:hover{
+	background: #CE003A;
+}
+.lablogo {
+	background: url(./logo.svg);
+	background-position: 141px 73px;
+	border: 0;
+	width: 70px;
+	height: 73px;
+	float: left;
+}
+.lablogo:hover, .lablogo:focus {
+	background-position: 70px 73px;
+}
